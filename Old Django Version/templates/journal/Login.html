@@ -1,0 +1,16 @@
+{% extends 'Base.html' %}
+
+{% block Title %}
+
+	Gratefulness Journal: Login
+
+{% endblock %}
+
+{% block Body %}
+
+	<form method="post" action="/accounts/login/">
+		{{ form.as_p }}
+		<p><input type="submit"/></p>
+	</form>
+
+{% endblock %}

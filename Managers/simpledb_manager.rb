@@ -1,6 +1,6 @@
 require 'yaml'
 require 'aws-sdk'
-
+require_relative '../Models/log'
 require_relative '../Models/app_config'
 
 class SimpleDBManager
@@ -9,7 +9,7 @@ class SimpleDBManager
 	@@app_config_file_path = '/Users/miller/Gratefulness/app-config.yaml'
 
 	@@app_config = nil
-	@@aws_client = nil
+	@@aws_client = nil	
 
 	# Singleton.
 	private_class_method :new
@@ -26,7 +26,7 @@ class SimpleDBManager
 		@@manager
 	end
 
-	def SimpleDBManager.configureAws(config_file)
+	def SimpleDBManager.configure_aws(config_file)
 		# TODO: cache this somehow.
 		config = YAML.load(File.read(config_file))	
 		AWS.config(config)
@@ -37,7 +37,14 @@ class SimpleDBManager
 		@model_name = 'dummy'
 		@@model_aws_domain = "%s_%s" % [@@app_config.instance_code, @model_name]			
 		puts @@model_aws_domain
-		# @domain = @@aws_client.domains[@@model_aws_domain]
+		@domain = @@aws_client.domains[@@model_aws_domain]
+		if not @domain.exists?			
+			@aws_client.domains.create(@@model_aws_domain)
+			@domain  = @@aws_client.domains[@@model_aws_domain]
+			# TODO: error if @domain does not exist.
+		end
+	end
+
 	end
 
 end

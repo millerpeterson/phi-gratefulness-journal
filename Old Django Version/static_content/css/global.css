@@ -1,0 +1,29 @@
+textarea { font: inherit; }
+
+h2.entryTitle {  	 
+	font-size: 14px;
+	color: #666666;
+}
+	
+.spanButton {
+	color: #0000FF;
+}
+
+.offscreen {
+	position: absolute;
+	left: -999em;
+}
+
+a:link { 
+	color: #BD2031;
+	text-decoration: none;
+}
+
+a:visited { 
+	color: #BD2031;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #CE3142;
+}
