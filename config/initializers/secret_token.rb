@@ -1,12 +1,7 @@
 # Be sure to restart your server when you modify this file.
 
-# Your secret key is used for verifying the integrity of signed cookies.
+# Your secret key for verifying the integrity of signed cookies.
 # If you change this key, all old signed cookies will become invalid!
-
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-# You can use `rake secret` to generate a secure secret key.
-
-# Make sure your secret_key_base is kept private
-# if you're sharing your code publicly.
-Gratefulness::Application.config.secret_key_base = '9707f760530497f03f5d6628df609e76261dbc73009fba9b55c378ac1c96da7b5b4472e4705427a548e0310503dfae2832177cda376188524f86144a9c6df36a'
+Gratefulness::Application.config.secret_token = '2c26452c3b6e215fc9848a40f304a22bfd1621dfa9b230a510c0e13802ad7e4e5a8ca55cb7fbcb87a1b4cafc55472141c255ab1214b3a4c721b07cbd72133a1b'
