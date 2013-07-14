@@ -1,0 +1,13 @@
+= form_tag 'dologin', :class => 'pure-form pure-form-stacked' do
+
+  %legend
+    Log In
+
+  = label_tag :email
+  = text_field_tag :email, params[:email]
+
+  = label_tag :password
+  = password_field_tag :password
+
+  %button{ :type => 'submit', :class => 'submit pure-button pure-button-primary' }
+    Log In

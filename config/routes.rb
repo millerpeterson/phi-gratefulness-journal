@@ -9,6 +9,9 @@ Gratefulness::Application.routes.draw do
   resources :entries
   resources :users
 
+  match 'login' => 'session#new'
+  match 'dologin' => 'session#create'
+
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
