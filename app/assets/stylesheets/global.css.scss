@@ -3,3 +3,11 @@ form {
     margin-top: 10px;
   }
 }
+
+div {
+  .error_messages {
+    li {
+      color: #FF0000
+    }
+  }
+}

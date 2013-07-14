@@ -3,11 +3,12 @@
   %legend
     = t('sign-up.form-title')
 
-  = if @user.errors.any?
+  - if @user.errors.any?
     %div{ :class => "error_messages" }
       %ul
-        = for message in @user.errors.full_messages
-          %li = message
+        - for message in @user.errors.full_messages
+          %li
+            = message
 
   = f.label :email, t('sign-up.field-email')
   = f.text_field :email
