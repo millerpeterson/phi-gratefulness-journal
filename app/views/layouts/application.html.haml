@@ -9,7 +9,7 @@
     = csrf_meta_tags
 
     %title
-      = @page_title or 'Gratefulness'
+      = @page_title or t('application.base-title')
 
   %body
     = yield :body

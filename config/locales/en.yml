@@ -1,5 +1,13 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+
+  application:
+    base-title: 'Gratefulness'
+
+  sign-up:
+    form-title: 'Sign Up'
+    submit-form: 'Submit'
+    field-email: 'Email'
+    field-password: 'Password'
+    field-password-confirmation: 'Confirm Password'
+
+  sign-in:
