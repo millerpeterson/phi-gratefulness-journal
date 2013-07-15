@@ -5,9 +5,14 @@ en:
 
   sign-up:
     form-title: 'Sign Up'
-    submit-form: 'Submit'
     field-email: 'Email'
     field-password: 'Password'
     field-password-confirmation: 'Confirm Password'
+    submit-form: 'Sign Up!'
 
-  sign-in:
+  login:
+    form-title: 'Sign In'
+    field-email: 'Email'
+    field-password: 'Password'
+    submit-form: 'Sign In!'
+    error-invalid-creds: 'Invalid credentials'

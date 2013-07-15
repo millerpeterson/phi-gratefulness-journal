@@ -7,10 +7,18 @@ Gratefulness::Application.routes.draw do
   # Keep in mind you can assign values other than :controller and :action
 
   resources :entries
-  resources :users
 
-  match 'login' => 'session#new'
-  match 'dologin' => 'session#create'
+  resources :users do
+    member do
+      get 'new'
+      post 'create'
+    end
+  end
+  match 'signup' => 'users#new'
+
+  match 'logout' => 'session#destroy'
+  match 'login' => 'session#new', :as => :login
+  match 'session/create' => 'session#create', :as => :authenticate
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase

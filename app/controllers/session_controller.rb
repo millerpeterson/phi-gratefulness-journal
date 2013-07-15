@@ -1,5 +1,7 @@
 class SessionController < ApplicationController
 
+  skip_before_filter :require_login, only: [:new, :create]
+
   def new
   end
 
@@ -7,16 +9,16 @@ class SessionController < ApplicationController
     user = User.find_by_email(params[:email])
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to '/', :notice => "Logged in!"
+      redirect_to new_entry_path
     else
-      flash.now.alert = "Invalid email or password"
+      flash[:invalid_login] = t('login.error-invalid-creds')
       render "new"
     end
   end
 
   def destroy
     session[:user_id] = nil
-    redirect_to root_url, :notice => "Logged out!"
+    redirect_to login_url, :notice => "Logged out!"
   end
 
 end
