@@ -1,4 +1,5 @@
-= form_tag authenticate_path, :class => 'pure-form pure-form-stacked' do
+- form_style = { :class => 'pure-form pure-form-stacked' }
+= form_for @user_session, :url => user_sessions_path, :html => form_style do |f|
 
   %legend
     = t('login.form-title')
@@ -9,11 +10,11 @@
         %li
           = flash[:invalid_login]
 
-  = label_tag :email, t('login.field-email')
-  = text_field_tag :email, params[:email]
+  = f.label :login
+  = f.text_field :login
 
-  = label_tag :password, t('login.field-password')
-  = password_field_tag :password
+  = f.label :password, t('login.field-password')
+  = f.password_field :password
 
   %button{ :type => 'submit', :class => 'submit pure-button pure-button-primary' }
     = t('login.submit-form')

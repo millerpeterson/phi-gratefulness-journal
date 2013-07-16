@@ -8,17 +8,15 @@ Gratefulness::Application.routes.draw do
 
   resources :entries
 
-  resources :users do
-    member do
-      get 'new'
-      post 'create'
-    end
-  end
+  resources :users
   match 'signup' => 'users#new'
 
-  match 'logout' => 'session#destroy'
-  match 'login' => 'session#new', :as => :login
-  match 'session/create' => 'session#create', :as => :authenticate
+  resources :user_sessions
+
+  match 'logout' => 'user_sessions#destroy', :as => :logout
+  match 'login' => 'user_sessions#new', :as => :login
+
+  # root 'user_sessions#new'
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
