@@ -13,7 +13,7 @@ end
 gem 'haml'
 
 gem 'jquery-rails'
-gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'authlogic'
 
 gem "binding_of_caller" # For better_errors
 
