@@ -1,26 +1,26 @@
 = form_for @user, :html => { :class => 'pure-form pure-form-stacked' } do |f|
+  %fieldset
+    %legend
+      = t('sign-up.form-title')
 
-  %legend
-    = t('sign-up.form-title')
+    - if @user.errors.any?
+      %div{ :class => 'error_messages' }
+        %ul
+          - for message in @user.errors.full_messages
+            %li
+              = message
 
-  - if @user.errors.any?
-    %div{ :class => "error_messages" }
-      %ul
-        - for message in @user.errors.full_messages
-          %li
-            = message
+    = f.label :login, 'Nickname'
+    = f.text_field :login
 
-  = f.label :login, 'Nickname'
-  = f.text_field :login
+    = f.label :email, t('sign-up.field-email')
+    = f.text_field :email
 
-  = f.label :email, t('sign-up.field-email')
-  = f.text_field :email
+    = f.label :password, t('sign-up.field-password')
+    = f.password_field :password
 
-  = f.label :password, t('sign-up.field-password')
-  = f.password_field :password
+    = f.label :password_confirmation, t('sign-up.field-password-confirmation')
+    = f.password_field :password_confirmation
 
-  = f.label :password_confirmation, t('sign-up.field-password-confirmation')
-  = f.password_field :password_confirmation
-
-  %button{ :type => 'submit', :class => 'submit pure-button pure-button-primary' }
-    = t('sign-up.submit-form')
+    %button{ :type => 'submit', :class => 'submit pure-button pure-button-primary' }
+      = t('sign-up.submit-form')

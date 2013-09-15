@@ -1,20 +1,21 @@
 - form_style = { :class => 'pure-form pure-form-stacked' }
 = form_for @user_session, :url => user_sessions_path, :html => form_style do |f|
+  %fieldset
+    %legend
+      = t('login.form-title')
 
-  %legend
-    = t('login.form-title')
+    - if @user_session.errors.any?
+      %div{ :class => 'error_messages' }
+        %ul
+          - for message in @user_session.errors.full_messages
+            %li
+              = message
 
-  - if flash[:invalid_login]
-    %div{ :class => 'error_messages'}
-      %ul
-        %li
-          = flash[:invalid_login]
+    = f.label :login
+    = f.text_field :login
 
-  = f.label :login
-  = f.text_field :login
+    = f.label :password, t('login.field-password')
+    = f.password_field :password
 
-  = f.label :password, t('login.field-password')
-  = f.password_field :password
-
-  %button{ :type => 'submit', :class => 'submit pure-button pure-button-primary' }
-    = t('login.submit-form')
+    %button{ :type => 'submit', :class => 'submit pure-button pure-button-primary' }
+      = t('login.submit-form')

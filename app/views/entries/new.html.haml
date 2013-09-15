@@ -1,1 +1,9 @@
-%h1 New
+%h1
+  = t('new-entry.page-title')
+%h2
+  = DateTime.now.to_s(:long)
+
+= form_for @entry, :url => entries_path(@entry) do |e|
+  = e.text_area :body_text
+  %button{ :type => 'submit', :class => 'submit pure-button pure-button-primary' }
+    = t('new-entry.submit-form')

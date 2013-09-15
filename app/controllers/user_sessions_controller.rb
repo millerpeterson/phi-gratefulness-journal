@@ -12,8 +12,7 @@ class UserSessionsController < ApplicationController
     if @user_session.save
       # TODO: localize
       flash[:notice] = "Login successful!"
-      redirect_back_or_default new_entry_path
-      abort
+      redirect_back_or_default home_path
     else
       render :action => :new
     end
@@ -23,7 +22,7 @@ class UserSessionsController < ApplicationController
     current_user_session.destroy
     # TODO: localize
     flash[:notice] = "Logout successful!"
-    redirect_back_or_default new_user_session_url
+    redirect_back_or_default home_path
   end
 
 end

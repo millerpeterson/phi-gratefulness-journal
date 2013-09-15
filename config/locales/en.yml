@@ -1,7 +1,10 @@
 en:
 
   application:
-    base-title: 'Gratefulness'
+    base-title: 'thx.io'
+
+  top-menu:
+    site-title: 'thx.io'
 
   sign-up:
     form-title: 'Sign Up'
@@ -15,4 +18,7 @@ en:
     field-email: 'Email'
     field-password: 'Password'
     submit-form: 'Sign In!'
-    error-invalid-creds: 'Invalid credentials'
+
+  new-entry:
+    page-title: 'New Thanks'
+    submit-form: 'Done.'

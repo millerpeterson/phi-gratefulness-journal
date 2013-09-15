@@ -9,12 +9,14 @@ Gratefulness::Application.routes.draw do
   resources :entries
 
   resources :users
-  match 'signup' => 'users#new'
+  match 'signup' => 'users#new', :as => :signup
 
   resources :user_sessions
 
   match 'logout' => 'user_sessions#destroy', :as => :logout
   match 'login' => 'user_sessions#new', :as => :login
+
+  match 'home' => 'home#index'
 
   # root 'user_sessions#new'
 
