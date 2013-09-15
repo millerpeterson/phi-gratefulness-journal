@@ -11,6 +11,7 @@ group :assets do
 end
 
 gem 'haml'
+gem 'nokogiri'
 
 gem 'jquery-rails'
 gem 'authlogic'

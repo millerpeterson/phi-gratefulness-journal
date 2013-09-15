@@ -11,10 +11,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130915154207) do
+ActiveRecord::Schema.define(:version => 20130915170659) do
 
   create_table "gratefulness_entries", :force => true do |t|
-    t.string   "body_text"
+    t.text     "body_text"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
     t.datetime "creation_date"
