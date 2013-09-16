@@ -1,9 +1,9 @@
 %h1
   = t('new-entry.page-title')
 %h2
-  = DateTime.now.to_s(:long)
+  = entry_title_format(DateTime.now)
 
-= form_for @entry, :url => entries_path(@entry) do |e|
+= form_for @entry, :url => user_entries_path(current_user, @entry) do |e|
   = e.text_area :body_text
   %button{ :type => 'submit', :class => 'submit pure-button pure-button-primary' }
     = t('new-entry.submit-form')

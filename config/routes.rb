@@ -6,9 +6,10 @@ Gratefulness::Application.routes.draw do
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
-  resources :entries
+  resources :users do
+    resources :entries
+  end
 
-  resources :users
   match 'signup' => 'users#new', :as => :signup
 
   resources :user_sessions
