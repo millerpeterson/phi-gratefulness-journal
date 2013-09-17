@@ -49,4 +49,9 @@ class ApplicationController < ActionController::Base
       raise ActionController::RoutingError.new('Not Found')
     end
 
+    def no_access
+      render :file => File.join(Rails.root, 'public/403.html'),
+             :status => 403, :layout => false
+    end
+
 end
