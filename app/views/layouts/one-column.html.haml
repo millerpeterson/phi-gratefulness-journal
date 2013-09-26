@@ -1,0 +1,9 @@
+- content_for :body do
+
+  %div{ class: 'menu-content' }
+    = render partial: 'layouts/topmenu'
+
+  %div{ class: 'main-content' }
+    = yield
+
+= render template: 'layouts/application'

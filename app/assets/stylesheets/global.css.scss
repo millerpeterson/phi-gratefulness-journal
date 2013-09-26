@@ -1,6 +1,35 @@
+div.main-content {
+
+  padding-left: 38px;
+  padding-right: 38px;
+
+  width: 100%;
+
+  h1 {
+    font-size: 4em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #666;
+  }
+
+  h3 {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  font-size: 3.0em;
+}
+
 form {
   button.submit {
-    margin-top: 10px;
+    margin-top: 25px;
   }
 }
 
@@ -10,9 +39,4 @@ div {
       color: #FF0000;
     }
   }
-}
-
-div.three-col {
-    padding-left: 38px;
-    padding-right: 38px;
 }

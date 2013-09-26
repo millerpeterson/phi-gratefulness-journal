@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
 
   protect_from_forgery
 
-  layout 'three_column'
+  layout 'one-column'
 
   helper_method :current_user_session, :current_user
 

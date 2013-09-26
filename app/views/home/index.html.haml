@@ -1,6 +1,7 @@
 %h1 thx.io
 %h2 Gratefulness Journal
 
+%div.button_container
 - if current_user
 
   = link_to "Create Today's Entry", new_user_entry_path(current_user), :class => 'pure-button pure-button-primary'
