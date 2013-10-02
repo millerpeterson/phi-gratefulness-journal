@@ -22,6 +22,15 @@ class EntriesController < ApplicationController
     not_found if @entry.nil?
   end
 
+  def index
+    if params[:random].present?
+      get_random_entry
+      render 'entries/random'
+    else
+      redirect_to new_user_entry_path(current_user)
+    end
+  end
+
   private
 
     def verify_user_path
@@ -30,6 +39,11 @@ class EntriesController < ApplicationController
 
     def get_entry
       @entry = GratefulnessEntry.find_by_id(params[:id])
+    end
+
+    def get_random_entry
+      offset = rand(GratefulnessEntry.count)
+      @entry = GratefulnessEntry.first(:offset => offset)
     end
 
     def require_ownership

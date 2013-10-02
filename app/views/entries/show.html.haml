@@ -1,5 +1,10 @@
-%h2
-  = entry_title_format(@entry.creation_date)
+%div.entry
 
-%div
-  = simple_format(@entry.body_text)
+  %h3
+    = entry_title_format(@entry.creation_date)
+
+  %div.entry-body
+    = simple_format(@entry.body_text)
+
+  %div.another-random
+    = link_to 'Random?', user_entries_path(current_user, :random => true), :class => 'pure-button pure-button-primary'

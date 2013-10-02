@@ -1,11 +1,10 @@
-%div{ :class => 'pure-menu pure-menu-open pure-menu-horizontal' }
+%div#top-menu{ :class => 'pure-menu pure-menu-open pure-menu-horizontal' }
 
-  %span{ :class => 'pure-menu-heading top-menu-item' }
-    = link_to 'thx.io', home_path
-
-  - if current_user
-    %ul
-      %li{ :class => 'top-menu-item' }
-        = link_to 'Logout', logout_path
+  %ul#top-menu-items
+    %li
+      = link_to 'thx.io', home_path
+    - if current_user
+      %li
+        = link_to 'logout', logout_path
 
 </div>

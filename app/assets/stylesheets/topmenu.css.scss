@@ -1,3 +1,10 @@
-div.menu-content {
-  font-size: 5em;
+div#top-menu {
+  font-size: 3.5em;
+  ul {
+    // background: #DDD;
+    height: 1.9em !important;
+    li {
+      padding-left: 20px !important;
+    }
+  }
 }

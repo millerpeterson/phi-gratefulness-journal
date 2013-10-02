@@ -1,5 +1,22 @@
 div.entry {
+
   textarea {
+    padding: 20px;
     font-size: 0.8em;
+    color: #444;
   }
+
+  div.entry-body {
+    font-size: 1em;
+    color: #444;
+    p {
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+  }
+
+}
+
+div.another-random {
+  margin-top: 40px;
 }
