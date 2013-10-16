@@ -1,13 +1,16 @@
-%h1 thx.io
-%h2 Gratefulness Journal
+%h1
+  = t('home.main-title')
+%h2
+  = t('home.sub-title')
 
 %div.button_container
 - if current_user
 
-  = link_to "New Entry", new_user_entry_path(current_user), :class => 'pure-button pure-button-primary'
-  = link_to "Random Entry", user_entries_path(current_user, :random => true), :class => 'pure-button pure-button-primary'
+  = link_to t('home.new'), new_user_entry_path(current_user), :class => 'pure-button pure-button-primary'
+  = link_to t('home.recent'), user_entries_path(current_user, :recent => true), :class => 'pure-button pure-button-primary'
+  = link_to t('home.random'), user_entries_path(current_user, :random => true), :class => 'pure-button pure-button-primary'
 
 - else
 
-  = link_to 'Login', login_path, :class => 'pure-button pure-button-primary'
-  = link_to 'New User?', signup_path, :class => 'pure-button pure-button-primary'
+  = link_to t('home.login'), login_path, :class => 'pure-button pure-button-primary'
+  = link_to t('home.sign-up'), signup_path, :class => 'pure-button pure-button-primary'

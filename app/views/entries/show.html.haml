@@ -6,5 +6,7 @@
   %div.entry-body
     = simple_format(@entry.body_text)
 
-  %div.another-random
-    = link_to 'Random?', user_entries_path(current_user, :random => true), :class => 'pure-button pure-button-primary'
+  %div.entry-nav
+    = link_to t('entry-nav.previous'), user_entry_path(current_user, @entry.previous), :class => 'pure-button pure-button-primary'
+    = link_to t('entry-nav.random'), user_entries_path(current_user, :random => true), :class => 'pure-button pure-button-primary'
+    = link_to t('entry-nav.next'), user_entry_path(current_user, @entry.next), :class => 'pure-button pure-button-primary'

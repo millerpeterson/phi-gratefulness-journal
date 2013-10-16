@@ -1,10 +1,20 @@
 en:
 
   application:
-    base-title: 'thx.io'
+    base-title: 'thx-journal.net'
 
   top-menu:
-    site-title: 'thx.io'
+    site-title: 'thx-journal.net'
+    logout: 'logout'
+
+  home:
+    main-title: 'thx-journal.net'
+    sub-title: 'Gratefulness Journal'
+    new-entry: 'New'
+    recent-entry: 'Recent'
+    random-entry: 'Random'
+    login: 'Login'
+    sign-up: 'New User?'
 
   sign-up:
     form-title: 'Sign Up'
@@ -22,3 +32,9 @@ en:
   new-entry:
     page-title: 'New Thanks'
     submit-form: 'Done'
+
+  entry-nav:
+    random: 'Random'
+    previous: 'Previous'
+    next: 'Next'
+

@@ -2,9 +2,9 @@
 
   %ul#top-menu-items
     %li
-      = link_to 'thx.io', home_path
+      = link_to t('top-menu.site-title'), home_path
     - if current_user
       %li
-        = link_to 'logout', logout_path
+        = link_to t('top-menu.logout'), logout_path
 
 </div>
