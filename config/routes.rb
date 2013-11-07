@@ -3,6 +3,8 @@ Gratefulness::Application.routes.draw do
   root to: 'home#index'
 
   resources :users do
+    get 'entries/random', :to => 'entries#random'
+    get 'entries/recent', :to => 'entries#recent'
     resources :entries
   end
 

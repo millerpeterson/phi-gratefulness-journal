@@ -2,8 +2,6 @@ class EntriesController < ApplicationController
 
   before_filter :require_user
   before_filter :verify_user_path
-  before_filter :get_entry!, only: [:show]
-  before_filter :require_ownership, only: [:show]
 
 	def new
     @entry = GratefulnessEntry.new
@@ -19,7 +17,20 @@ class EntriesController < ApplicationController
   end
 
   def show
-    not_found if @entry.nil?
+    get_entry!
+    check_ownership_and_existence
+  end
+
+  def random
+    get_random_entry!
+    check_ownership_and_existence
+    redirect_to user_entry_path(current_user, @entry)
+  end
+
+  def recent
+    get_last_entry!
+    check_ownership_and_existence
+    redirect_to user_entry_path(current_user, @entry)
   end
 
   def index
@@ -35,6 +46,11 @@ class EntriesController < ApplicationController
   end
 
   private
+
+    def check_ownership_and_existence
+      require_ownership
+      not_found if @entry.nil?
+    end
 
     def verify_user_path
       no_access if User.find_by_id(params[:user_id]) != current_user

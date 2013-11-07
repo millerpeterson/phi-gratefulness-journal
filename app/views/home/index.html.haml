@@ -7,8 +7,8 @@
 - if current_user
 
   = link_to t('home.new'), new_user_entry_path(current_user), :class => 'pure-button pure-button-primary'
-  = link_to t('home.recent'), user_entries_path(current_user, :recent => true), :class => 'pure-button pure-button-primary'
-  = link_to t('home.random'), user_entries_path(current_user, :random => true), :class => 'pure-button pure-button-primary'
+  = link_to t('home.recent'), user_entries_recent_path(current_user), :class => 'pure-button pure-button-primary'
+  = link_to t('home.random'), user_entries_random_path(current_user), :class => 'pure-button pure-button-primary'
 
 - else
 
