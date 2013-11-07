@@ -5,6 +5,10 @@ class GratefulnessEntry < ActiveRecord::Base
 
   belongs_to :author, class_name: 'User'
 
+  validates :body_text, presence: true
+  validates :creation_date, presence: true
+  validates :author, presence: true
+
   def self.previous_entry(author, date_ref)
     return nil if author.nil? || date_ref.nil?
     where('author_id = ? AND creation_date < ?', author.id, date_ref)
