@@ -7,6 +7,15 @@ development:
   username: <%= ENV['DEV_GRATEFULNESS_USERNAME'] %>
   password: <%= ENV['DEV_GRATEFULNESS_PASSWORD'] %>
 
+test:
+  adapter: postgresql
+  host: localhost
+  encoding: unicode
+  database: <%= ENV['TEST_GRATEFULNESS_DB'] %>
+  pool: 5
+  username: <%= ENV['DEV_GRATEFULNESS_USERNAME'] %>
+  password: <%= ENV['DEV_GRATEFULNESS_PASSWORD'] %>
+
 production:
   adapter: postgresql
   host: localhost
