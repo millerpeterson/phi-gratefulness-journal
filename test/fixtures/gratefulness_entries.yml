@@ -1,7 +1,53 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+### Cory's entries.
 
-one:
-  body_text: MyString
+c1:
+  body_text: Thanks boys (c1).
+  author: corey
+  creation_date: 2011-02-11 11:02:57
 
-two:
-  body_text: MyString
+c2:
+  body_text: Thanks boys (c2).
+  author: corey
+  creation_date: 2011-05-12 14:02:57
+
+c3:
+  body_text: Thanks boys (c3).
+  author: corey
+  creation_date: 2012-01-03 07:02:52
+
+c4:
+  body_text: Thanks boys (c4).
+  author: corey
+  creation_date: 2012-03-09 02:02:57
+
+c5:
+  body_text: Thanks boys (c5).
+  author: corey
+  creation_date: 2012-05-16 08:02:57
+
+### Trevor's entries.
+
+t1:
+  body_text: Thanks boys (t1).
+  author: trevor
+  creation_date: 2011-02-13 11:15:57
+
+t2:
+  body_text: Thanks boys (t2).
+  author: trevor
+  creation_date: 2011-04-15 02:02:22
+
+t3:
+  body_text: Thanks boys (t3).
+  author: trevor
+  creation_date: 2011-07-13 17:02:56
+
+t4:
+  body_text: Thanks boys (t4).
+  author: trevor
+  creation_date: 2011-09-29 02:02:57
+
+t5:
+  body_text: Thanks boys (t5).
+  author: trevor
+  creation_date: 2012-01-16 18:02:57
