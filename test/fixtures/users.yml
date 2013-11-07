@@ -1,26 +1,26 @@
 trevor:
   email: trevor@coolguys.com
   login: trevor
-  crypted_password: c7770981cc3533d532a32e37516775a755a43849c0f6eba04f13001ecc00bcb6b0495be57bb0cbb933e14d011cff7996951d7b9295a096b4e6755b30f2d53290
-  password_salt: jyX5oFpXNwgigZLyASR
-  persistence_token: 4d9e7fb17e9f3978c7d609a4f043ef6fc2bb0760b1be77250ad9769630af9a8fde9db080d2b64ba30a53d126bd7752845e4f813d7754ddbf527c7f8381b78ffa
-  single_access_token: akVEHxan97FrGEhPQ0v4
-  perishable_token: 9WwCquslKcvhNQTMyQpT
+  password_salt: <%= salt = Authlogic::Random.hex_token %>
+  crypted_password: <%= Authlogic::CryptoProviders::Sha512.encrypt("trevorpepper" + salt) %>
+  persistence_token: <%= Authlogic::Random.hex_token %>
+  single_access_token: <%= Authlogic::Random.friendly_token %>
+  perishable_token: <%= Authlogic::Random.friendly_token %>
 
 corey:
   email: corey@coolguys.com
   login: corey
-  crypted_password: 35ecd2d485f28c316891776661a0c3f5907ac85f94d0cbd970dd56e8ee67b9e603ba3237e2f629fd8f4628d8b3a2b83a4debbdda037b01e7c06d237b1f9bf120
-  password_salt: PNMWL1by4kyrzSQxmVGl
-  persistence_token: b6f453e1579425f2d61c47dfeea54445ff4d8153da43267b57eeb4aa7172fbf93da5b51d6a5eca2de303e8fa8064982a8eebfdb541d30d8a063f741c6c33bdcd
-  single_access_token: IpERAMEz4uMVjzRc5az5
-  perishable_token: 7HKZLZ0RCW8WQCdtW8YR
+  password_salt: <%= salt = Authlogic::Random.hex_token %>
+  crypted_password: <%= Authlogic::CryptoProviders::Sha512.encrypt("coreypepper" + salt) %>
+  persistence_token: <%= Authlogic::Random.hex_token %>
+  single_access_token: <%= Authlogic::Random.friendly_token %>
+  perishable_token: <%= Authlogic::Random.friendly_token %>
 
 jim:
   email: jim@coolguys.com
   login: jim
-  crypted_password: 35ecd2d485f28c316891776661a0c3f5907ac85f94d0cbd970dd56e8ee67b9e603ba3237e2f629fd8f4628d8b3a2b83a4debbdda037b01e7c06d237b1f9bf120
-  password_salt: PNMWL1by4kyrzSQxmVGl
-  persistence_token: b6f453e1579425f2d61c47dfeea54445ff4d8153da43267b57eeb4aa7172fbf93da5b51d6a5eca2de303e8fa8064982a8eebfdb541d30d8a063f741c6c33bdcd
-  single_access_token: IpERAMEz4uMVjzRc5az5
-  perishable_token: 7HKZLZ0RCW8WQCdtW8YR
+  password_salt: <%= salt = Authlogic::Random.hex_token %>
+  crypted_password: <%= Authlogic::CryptoProviders::Sha512.encrypt("jimpepper" + salt) %>
+  persistence_token: <%= Authlogic::Random.hex_token %>
+  single_access_token: <%= Authlogic::Random.friendly_token %>
+  perishable_token: <%= Authlogic::Random.friendly_token %>
