@@ -20,6 +20,7 @@ gem "binding_of_caller" # For better_errors
 
 group :development do
   gem 'better_errors'
+  gem 'byebug'
 end
 
 group :production do
