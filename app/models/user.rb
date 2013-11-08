@@ -7,4 +7,6 @@ class User < ActiveRecord::Base
   attr_accessible :password
   attr_accessible :password_confirmation
 
+  has_many :entries, class_name: 'GratefulnessEntry', foreign_key: 'author_id'
+
 end
