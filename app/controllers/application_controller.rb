@@ -46,12 +46,22 @@ class ApplicationController < ActionController::Base
     end
 
     def not_found
-      raise ActionController::RoutingError.new('Not Found')
+      status_code_response(404, :not_found)
     end
 
     def no_access
-      render :file => File.join(Rails.root, 'public/403.html'),
-             :status => 403, :layout => false
+      status_code_response(403, :forbidden)
+    end
+
+    def unprocessable
+      status_code_response(422, :unprocessable_entity)
+    end
+
+    def status_code_response(code, status)
+      render file: File.join(Rails.root, "public/#{code}"),
+             formats: [:html],
+             status: status,
+             layout: false
     end
 
 end
