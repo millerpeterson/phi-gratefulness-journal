@@ -13,44 +13,36 @@ class EntriesController < ApplicationController
     @entry.author = current_user
     if @entry.save
       redirect_to user_entry_path(current_user, @entry)
+    else
+      unprocessable
     end
   end
 
   def show
     get_entry!
-    check_ownership_and_existence
+    not_found and return if @entry.nil?
+    no_access if !entry_owned?
   end
 
   def random
     get_random_entry!
-    check_ownership_and_existence
+    not_found and return if @entry.nil?
+    no_access and return if !entry_owned?
     redirect_to user_entry_path(current_user, @entry)
   end
 
   def recent
     get_last_entry!
-    check_ownership_and_existence
+    not_found and return if @entry.nil?
+    no_access and return if !entry_owned?
     redirect_to user_entry_path(current_user, @entry)
   end
 
   def index
-    if params[:random].present?
-      get_random_entry!
-      render 'entries/show'
-    elsif params[:recent].present?
-      get_last_entry!
-      render 'entries/show'
-    else
-      redirect_to new_user_entry_path(current_user)
-    end
+    redirect_to new_user_entry_path(current_user)
   end
 
   private
-
-    def check_ownership_and_existence
-      require_ownership
-      not_found if @entry.nil?
-    end
 
     def verify_user_path
       no_access if User.find_by_id(params[:user_id]) != current_user
@@ -61,16 +53,16 @@ class EntriesController < ApplicationController
     end
 
     def get_last_entry!
-      @entry = GratefulnessEntry.previous_entry(DateTime.now)
+      @entry = GratefulnessEntry.previous_entry(current_user, DateTime.now)
     end
 
     def get_random_entry!
-      offset = rand(GratefulnessEntry.count)
-      @entry = GratefulnessEntry.first(:offset => offset)
+      offset = rand(current_user.entries.count)
+      @entry = current_user.entries.first(offset: offset)
     end
 
-    def require_ownership
-      no_access if @entry.try(:author) != current_user
+    def entry_owned?
+      @entry.try(:author) == current_user
     end
 
 end
