@@ -6,7 +6,7 @@ class EntriesControllerTest < ActionController::TestCase
 
   def assert_valid_must_be_logged_in
     assert_redirected_to new_user_session_path
-    assert_equal(flash[:notice], I18n.t('must-be-logged-in'))
+    assert_equal I18n.t('application.must-be-logged-in'), flash[:notice]
   end
 
   test "New, not logged in" do

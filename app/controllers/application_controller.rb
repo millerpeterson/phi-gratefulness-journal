@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
     def require_user
       unless current_user
         store_location
-        flash[:notice] = I18n.t('must-be-logged-in')
+        flash[:notice] = I18n.t('application.must-be-logged-in')
         redirect_to new_user_session_path
         return false
       end
@@ -30,7 +30,7 @@ class ApplicationController < ActionController::Base
     def require_no_user
       if current_user
         store_location
-        flash[:notice] = I18n.t('must-be-logged-out')
+        flash[:notice] = I18n.t('application.must-be-logged-out')
         redirect_to home_path
         return false
       end

@@ -4,6 +4,7 @@ en:
     base-title: 'thx-journal.net'
     must-be-logged-in: 'You must be logged in to access this page.'
     must-be-logged-out: 'You must be logged out to access this page.'
+    account-registered: 'Account registered.'
 
   top-menu:
     site-title: 'thx-journal.net'
