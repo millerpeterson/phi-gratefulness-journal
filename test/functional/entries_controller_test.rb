@@ -4,11 +4,6 @@ class EntriesControllerTest < ActionController::TestCase
 
   setup :activate_authlogic
 
-  def assert_valid_must_be_logged_in
-    assert_redirected_to new_user_session_path
-    assert_equal I18n.t('application.must-be-logged-in'), flash[:notice]
-  end
-
   test "New, not logged in" do
     trevor = users(:trevor)
     get(:new, { user_id: trevor.id })

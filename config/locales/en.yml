@@ -4,6 +4,8 @@ en:
     base-title: 'thx-journal.net'
     must-be-logged-in: 'You must be logged in to access this page.'
     must-be-logged-out: 'You must be logged out to access this page.'
+    login-successful: 'Login succcessful!'
+    logout-successful: 'Logout successful!'
     account-registered: 'Account registered.'
 
   top-menu:
@@ -28,6 +30,7 @@ en:
 
   login:
     form-title: 'Sign In'
+    field-login: 'Login'
     field-email: 'Email'
     field-password: 'Password'
     submit-form: 'Sign In!'

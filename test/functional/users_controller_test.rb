@@ -4,12 +4,6 @@ class UsersControllerTest < ActionController::TestCase
 
   setup :activate_authlogic
 
-  def assert_valid_must_not_be_logged_in
-    assert_redirected_to home_path
-    assert_equal I18n.t('application.must-be-logged-out'),
-                 flash[:notice]
-  end
-
   test 'New, logged in' do
     corey = users(:corey)
     UserSession.create(corey)
