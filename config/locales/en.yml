@@ -21,7 +21,7 @@ en:
     recent-entry: 'Recent'
     random-entry: 'Random'
     login: 'Login'
-    sign-up: 'New User'
+    sign-up: 'Signup'
 
   sign-up:
     form-title: 'Sign Up'
