@@ -1,0 +1,11 @@
+%h3
+  = t('about.title')
+
+%p
+  = t('about.credits')
+
+%p
+  %a{ :href => 'https://github.com/millerpeterson/thx-journal', :target => '_blank', :class => 'info-link' }
+    = t('about.code')
+
+= link_to t('about.back-home'), home_path, :class => 'pure-button pure-button-primary'

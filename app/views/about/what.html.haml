@@ -1,0 +1,17 @@
+%h3
+  = t('what.title')
+
+%p
+  = t('what.p1')
+
+%p
+  = t('what.p2')
+
+%p
+  = t('what.p3')
+
+%p
+  %a{ :href => 'http://greatergood.berkeley.edu/article/item/tips_for_keeping_a_gratitude_journal', :target => '_blank', :class => 'info-link' }
+    = t('what.tips')
+
+= link_to t('what.back-home'), home_path, :class => 'pure-button pure-button-primary'

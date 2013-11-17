@@ -11,15 +11,17 @@ en:
   top-menu:
     site-title: 'thx-journal.net'
     logout: 'logout'
+    about: 'about'
 
   home:
     main-title: 'thx-journal.net'
     sub-title: 'Gratefulness Journal'
+    what: 'What?'
     new-entry: 'New'
     recent-entry: 'Recent'
     random-entry: 'Random'
     login: 'Login'
-    sign-up: 'New User?'
+    sign-up: 'New User'
 
   sign-up:
     form-title: 'Sign Up'
@@ -43,3 +45,17 @@ en:
     random: 'Random'
     previous: 'Previous'
     next: 'Next'
+
+  what:
+    title: "What's this?"
+    p1: 'Recent psychological studies have shown that taking time to consciously consider the good things in your life can improve your happiness and health.'
+    p2: 'One way of doing this is maintaining a gratefulness journal, in which you regularly write down things for which you feel grateful.'
+    p3: 'thx-journal is a simple web application for keeping a gratefulness journal.'
+    tips: 'Tips for keeping a gratefulness journal'
+    back-home: 'Back Home'
+
+  about:
+    title: 'About'
+    credits: 'thx-journal is developed and maintained by Miller Peterson.'
+    code: 'GitHub page for thx-journal'
+    back-home: 'Back Home'
