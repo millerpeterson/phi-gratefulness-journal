@@ -7,6 +7,9 @@
     = simple_format(@entry.body_text)
 
   %div.entry-nav
-    = link_to t('entry-nav.previous'), user_entry_path(current_user, @entry.previous), :class => 'pure-button pure-button-primary'
-    = link_to t('entry-nav.random'), user_entries_random_path(current_user), :class => 'pure-button pure-button-primary'
-    = link_to t('entry-nav.next'), user_entry_path(current_user, @entry.next), :class => 'pure-button pure-button-primary'
+    - if @entry.previous.present?
+      = link_to t('entry-nav.previous'), user_entry_path(current_user, @entry.previous), :class => 'pure-button pure-button-primary'
+    - if current_user.entries.size > 1
+      = link_to t('entry-nav.random'), user_entries_random_path(current_user), :class => 'pure-button pure-button-primary'
+    - if @entry.next.present?
+      = link_to t('entry-nav.next'), user_entry_path(current_user, @entry.next), :class => 'pure-button pure-button-primary'
