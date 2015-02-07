@@ -1,0 +1,220 @@
+[
+    {
+        "pk": 1, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "Going out for dinner with Rhys after work\r\nA nice morning\r\nReading the economist on the way to work\r\nListening to the Dabrye album at work\r\nDeep dish pizza for lunch\r\nCarolyn\r\nGetting this to the point where I can enter data\r\nBeing a non-smoker\r\nFriends and family\r\nGoing for walks and smoking joints", 
+            "dateWritten": "2010-07-14 00:03:17", 
+            "author": 1
+        }
+    },
+    
+    {
+        "pk": 2, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "Going to the gym\r\nNew Big Boi album\r\nGoing out for a burger with Carolyn\r\nCarolyn\r\nRhys and Delia\r\nPlaying video games\r\nDeadwood\r\nBeing a non-smoker\r\nSummer\r\nHealth", 
+            "dateWritten": "1992-02-11 00:58:25", 
+            "author": 1
+        }
+    },
+     
+    {
+        "pk": 3, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "Rhys\r\nSummer weather\r\nSmoking a joint before work\r\nBeing a non-smoker\r\nWorking on Django gratefulness journal\r\nCarolyn being understanding\r\nCarolyn\r\n21 Tichester\r\nGoing for a walk in the evening\r\nOverall a pretty sweet life", 
+            "dateWritten": "1981-07-16 23:48:24", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "A nice brunch with Carolyn's family\r\nBeing more or less over the nicotine withdrawal\r\nBeing a non-smoker\r\nWalking around the distillery district on a nice day\r\nSmoking a joint with Carolyn on the balcony\r\nWorking on projects\r\nWriting in my gratefulness journal\r\nThings being ok with Carolyn\r\nWatching Treme\r\nSummer", 
+            "dateWritten": "1981-07-17 00:05:02", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "Rhys and Delia\r\nCarolyn\r\nWatching Futurama and eating Swiss Chalet with Carolyn\r\nReading the Manual of Detection on the way to / from work\r\nNew Economist and Wire magazines\r\n21 Tichester Rd.\r\nWorking on projects\r\nSpaceward Ho!, even though I waste too much fuckin' time on it\r\nBeing a non-smoker\r\nHealth", 
+            "dateWritten": "1981-07-18 00:28:02", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "Rhys and Delia\nWorking on the Gratefulness journal\nThe Economist\nCarolyn\nWorking at ePresence\nAn evening to myself\nAlexandra\nMom\nBeing a non-smoker\nHealth\nDoing it with Carolyn this morning", 
+            "dateWritten": "1981-07-19 23:14:53", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "Working out at the gym\r\nBeing a non-smoker\r\nCarolyn\r\nWorking on my gratefulness project\r\nMornings to myself\r\nWorking at ePresence\r\nAriel Pink tomorrow\r\nFamily\r\nReading the Manual of Detection on my way to work\r\nBeing clean and shaved", 
+            "dateWritten": "1981-07-22 23:51:31", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "Carolyn being nice to me when I got home from work\r\nAfrica Hitech music\r\nThe Manual of Detection\r\nA fun weekend\r\nHaving a talk with Carolyn, feeling good about us\r\nePresence\r\nWorking on this gratefulness journal project\r\nHealth\r\nWatching the Green Zone, even though it's a shitty movie\r\nBeing a non-smoker\r\nFriends and family", 
+            "dateWritten": "1981-07-23 00:11:21", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "Working hard, being challenged\r\nCarolyn\r\nMaking dinner for us\r\nWorking on this gratefulness journal\r\nListening to sounds I made\r\nEating lunch by myself today\r\nReading the Economist\r\nListening to Gorky's Zygotic Mynci\r\nGoing for a walk with Carolyn\r\nBeing a non-smoker", 
+            "dateWritten": "1981-07-24 00:28:12", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "A not too stressful day at work\r\nBeing challenged\r\nWorking hard\r\nCarolyn\r\nSeeing Chris after a long while\r\nDinner with Dad and Ginny\r\nBest Coast album\r\nSummer\r\nHealth\r\nBeing a non-smoker", 
+            "dateWritten": "1981-07-25 23:46:57", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "Long weekend\nTaking naps on the couch\nWatching Mad Men Season 4 with Carolyn\nEating Indian food with Carolyn's parents\nTalking to my Mom on the phone\nBeing a non-smoker\nPlaying Halo 3 campaign\nWorking on this project\nHealth", 
+            "dateWritten": "1981-07-26 22:27:59", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "Seeing Rhys at work\nDeciding on a company name\nWorking at ePresence\nGetting Carolyn's dress for her\nCarolyn having an interview tomorrow\nCarolyn\nThis project\nHalo\nBeing a non-smoker\nHealth", 
+            "dateWritten": "1981-07-27 01:04:32", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "Having a tasty lunch with Mom\nBeing a non-smoker\nA productive day at work\nReading the economist\nSmoking a joint before work\nMeeting Carolyn after work\nFriends and family\nHealth\nNaps\nMusic", 
+            "dateWritten": "1981-07-30 22:31:44", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "Carolyn\nA challenging and productive day at work\nTaking a nap on the couch\nReading Urayasu Tekkin Kazoku on the way to work\nPlaying Halo ODST\nListening to music\nRhys and Delia\nEating a tasty roti for lunch\nBeing a non-smoker\nHealth", 
+            "dateWritten": "1981-07-31 23:05:34", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "Being back in Toronto\r\nA great vacation in SF\r\nGetting 100 pts in the first level of Katamari\r\nPlaying video games with Carolyn\r\nWorking at ePresence\r\nRhys and Delia\r\n21 Tichester Rd.\r\nTalking to Mom on the phone\r\nBeing a non-smoker\r\nMagic Kids album\r\n", 
+            "dateWritten": "1981-08-01 21:56:55", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "Working on music with Reaper\r\nPlaying Katamari with Carolyn\r\nGoing to the Eaton Center with Rhys after work\r\nWorking at ePresence\r\nReading the Acoustic Territories book\r\nNew William Gibson book\r\nNew music\r\nCarolyn\r\n21 Tichester Rd.\r\nBeing a non-smoker", 
+            "dateWritten": "1981-08-02 23:36:00", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "Working on this gratefulness journal project\nDinner with Carolyn at Terroni\nCarolyn\nSmoking weed and playing Katamari\nWorking at ePresence\nMusic\nRiding the subway to work\nToronto\nMy computer\nBeing a non-smoker\nHealth", 
+            "dateWritten": "1981-08-03 00:25:53", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "Working on this gratefulness journal\r\nFlying Lotus tomorrow\r\nA fun long weekend ahead\r\nRhys and Delia\r\nWorking at ePresence\r\nKatamari\r\nCarolyn\r\nMagic Kids album\r\nRiding the streetcar to work\r\nAlexandra\r\nBeing a non-smoker", 
+            "dateWritten": "2010-09-03 00:01:42", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "We are so smooth now\nSecond line.\nBrap.", 
+            "dateWritten": "2010-09-04 13:42:15", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "dfkgjdlfkjg\nfdlkgjdlfkj\ndfglkdjfgl\ndfglkdjf\ndfgljdkjf\ndgljfkgjld\ndflgkjdflgkjd\ndflkgjdlfkjg\ndflkgjdlf\nflkgjdlfgkjdlf222", 
+            "dateWritten": "2010-09-05 22:14:33", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "Getting drunk with Carolyn\nA nice dinner waiting for me when I got home\nEating lunch with Rhys and Delia\nStarting a new William Gibson novel\nA really nice long weekend\nProjects\nBeing a non-smoker\nKatamari, even though I play it way too fuckin' much\nHealth\nThe Fall", 
+            "dateWritten": "2010-09-08 00:07:29", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "A nice dinner with Carolyn\nTaking a bath\nRhys and Delia\nWorking on my Max/Msp project\nPlaying Katamari\nGood ass pepperoni pizza for lunch\nHealth\nBeing a non-smoker\nCarolyn\nMom", 
+            "dateWritten": "2010-09-08 23:58:08", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "Carolyn making me a smoothie in the morning\nGoing to Reggie's for lunch with Rhys and Delia\nDrinking at the Caseware social during work hours\nNot having to go to Carolyn's grandma's art exhibit\nGetting a haircut\nHealth\nFamily and friends\nA short week at work\nBeing a non-smoker\nReading on the couch with Carolyn", 
+            "dateWritten": "2010-09-09 21:54:15", 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "journal.entry", 
+        "fields": {
+            "body": "A fun night last night drinking with Carolyn's friends\nWatching Shooter\nCarolyn\nA lazy day\nWorking on projects in Max/MSP\nPlaying Katamari\nEating dinner at McDonald's\nHealth\nBeing a non-smoker\n21 Tichester Rd.", 
+            "dateWritten": "2010-09-12 00:46:45", 
+            "author": 1
+        }
+    }
+]

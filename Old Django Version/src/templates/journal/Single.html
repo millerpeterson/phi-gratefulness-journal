@@ -1,0 +1,21 @@
+{% extends 'Base.html' %}
+
+{% block Head %}
+	
+	{% include 'journal/EntryUIHeaders.html' %}
+
+{% endblock %}
+
+{% block Title %}
+
+	Gratefulness Journal for {{ entry.dateWritten|date:"F j, Y" }}
+
+{% endblock Title %}
+
+{% block Body %}
+
+	<div id="entryContainer">
+		{{ entryHtml|safe }}
+	</div>
+
+{% endblock %}

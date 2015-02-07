@@ -1,0 +1,16 @@
+{% extends 'Base.html' %}
+
+{% block Title %}
+
+	Gratefulness Journal: Import XML
+
+{% endblock %}
+
+{% block Body %}
+
+	<form method="post" action="/journal/import/" enctype="multipart/form-data">
+		{{ form.as_p }}
+		<p><input type="submit"/></p>
+	</form>
+
+{% endblock %}
